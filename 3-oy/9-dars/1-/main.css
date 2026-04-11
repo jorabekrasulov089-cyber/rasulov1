@@ -1,0 +1,270 @@
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #edf3f8;
+  color: #36536b;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+.header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #36536b;
+}
+
+.btn {
+  background: #ba4270;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  max-width: 500px;
+}
+
+.email-box {
+  margin-top: 20px;
+}
+
+.email-box input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 250px;
+}
+
+.partners {
+  background: #1b262f;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.logos span {
+  margin: 15px;
+  display: inline-block;
+}
+
+.easy {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+.code-box {
+  background: #1b262f;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.ui {
+  text-align: center;
+  padding: 60px;
+}
+
+.footer {
+  background: #1b262f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #edf3f8;
+  color: #36536b;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: #36536b;
+}
+
+/* BUTTON */
+.btn {
+  background: #ba4270;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  max-width: 500px;
+}
+
+.email-box {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.email-box input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 250px;
+}
+
+/* PARTNERS */
+.partners {
+  background: #1b262f;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.logos {
+  margin-top: 20px;
+}
+
+.logos span {
+  margin: 10px 20px;
+  display: inline-block;
+}
+
+/* EASY */
+.easy {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+  gap: 40px;
+}
+
+.code-box {
+  background: #1b262f;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* UI */
+.ui {
+  text-align: center;
+  padding: 60px;
+}
+
+/* FOOTER */
+.footer {
+  background: #1b262f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===================== */
+/* 📱 RESPONSIVE PART */
+/* ===================== */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .email-box {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .easy {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header nav {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .email-box {
+    flex-direction: column;
+  }
+
+  .email-box input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .easy {
+    padding: 30px 20px;
+  }
+
+  .partners {
+    padding: 30px 20px;
+  }
+
+  .ui {
+    padding: 30px 20px;
+  }
+}

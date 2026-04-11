@@ -1,0 +1,285 @@
+:root {
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1280px;
+  max-width: 100%;
+  margin: auto;
+  padding: 24px 156px;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.open {
+  display: flex;
+  gap: 48px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.menu a:hover {
+  color: red;
+}
+
+
+.canta {
+  margin-top: 64px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hero-text h1 {
+  margin-bottom: 16px;
+  font-size: 40px;
+  line-height: 140%;
+}
+.hero-text p {
+  margin-bottom: 48px;
+  color: #5d5656;
+}
+
+
+button {
+  width: 180px;
+  height: 55px;
+  border-radius: 64px;
+  background-color: #dc3845;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  color: black;
+  background-color: red;
+}
+.gifts {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.title {
+  margin-top: 72px;
+  font-size: 28px;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.gift-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.card img {
+  width: 120px;
+}
+
+
+.open-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 133px;
+  gap: 88px;
+}
+.open-about h2 {
+  margin-bottom: 24px;
+}
+.stove-about p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #5d5656;
+}
+
+.title h2 {
+  text-align: center;
+}
+
+
+.lots-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+
+.animals {
+  display: flex;
+  text-align: center;
+}
+
+.deer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+
+.calll {
+  margin-top: 120px;
+}
+
+.message-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #dc3845;
+  padding: 60px;
+  margin: 0 40px;
+  border-radius: 30px;
+  flex-wrap: wrap;
+}
+
+.calll-text h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.message-text input {
+  width: 280px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.dark {
+  background: #2b2b2b;
+  color: white;
+  width: 180px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  
+}
+
+.dark:hover {
+  background: red;
+}
+
+.calll-img img {
+  width: 300px;
+}
+
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 24px 16px;
+    width: 100%;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    margin-bottom: 24px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  
+  .gift-wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .card img {
+    width: 100px;
+  }
+
+  
+  .stove-about {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .stove-about p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+
+  
+  .lots-img {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  
+  .deer {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+
+  .message-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+    margin: 0 16px;
+  }
+
+  .message-text input,
+  .dark {
+    width: 100%;
+  }
+
+  .message-img img {
+    width: 100%;
+    max-width: 220px;
+  }
+}
