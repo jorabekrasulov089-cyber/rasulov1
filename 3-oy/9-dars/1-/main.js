@@ -62,6 +62,8 @@ console.log(result12);
 let A13 = 123;
 let a13 = Math.floor(A13 / 100);
 let b13 = Math.floor((A13 % 100) / 10);
+let b100 = Math.floor((A13 % 100) / 10);
+
 let c13 = A13 % 10;
 
 let result13 = a13 < b13 && b13 < c13;
