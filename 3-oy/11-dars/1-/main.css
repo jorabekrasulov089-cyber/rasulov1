@@ -1,0 +1,95 @@
+    body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.hero {
+  background: url('./Bitmap\ \(1\).svg\ 1.1.svg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 730px;
+  margin-top: 200px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.primary {
+  background: #3cb4ac;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.secondary {
+  background: #ddd;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  margin: 60px auto 10px;
+  padding: 20px;
+  width: 730px;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  width: 730px;
+  height: 10px;
+  background: #ddd;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.progress {
+  width: 700px;
+  height: 100%;
+  background: #3cb4ac;
+  border-radius: 10px;
+}
+
+.about {
+  background: white;
+  width: 730px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.card button {
+  background: #3cb4ac;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.card.disabled {
+  opacity: 0.5;
+}

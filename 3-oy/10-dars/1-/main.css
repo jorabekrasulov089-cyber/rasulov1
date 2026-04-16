@@ -1,0 +1,150 @@
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  color: #fff;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('bg.jpg') center/cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 30, 50, 0.6);
+}
+
+.topbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-size: 14px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 80px 40px;
+}
+
+.back {
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.info {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.info div strong {
+  display: block;
+  font-size: 18px;
+}
+
+.info div span {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tags span {
+  background: #fff;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.map-btn {
+  background: linear-gradient(90deg, #4da6ff, #0066ff);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.play-btn {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 123, 255, 0.6);
+  border-radius: 50%;
+}
+
+.play-btn::after {
+  content: "▶";
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .topbar {
+    padding: 15px;
+  }
+
+  .content {
+    padding: 40px 20px;
+  }
+
+  .play-btn {
+    display: none;
+  }
+}
