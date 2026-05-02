@@ -1,0 +1,83 @@
+      * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            display: flex;
+            height:680px ;
+            background-color: #f9f9f9;
+            margin: 8px;
+        }
+
+        /* Chap tomon: Forma qismi */
+        .left-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+            color: #2a796f;
+        }
+
+        .logo img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        h1 { margin-bottom: 10px; }
+        .sub-text { margin-bottom: 20px; color: #666; }
+        .sub-text a { color: #2a796f; text-decoration: none; font-weight: bold; }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #2a796f;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* O'ng tomon: Vizual qism */
+        .right-side {
+            flex: 1;
+            background-color: #2a796f;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            text-align: center;
+            border-radius: 40px 0 0 40px;
+        }
+
+        .right-side h2 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        /* Mobil qurilmalar uchun moslashuv */
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            .right-side { display: none; } /* Kichik ekranda yashirish */
+        }
